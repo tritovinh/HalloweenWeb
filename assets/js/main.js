@@ -17,5 +17,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         speed: 800,
         swipe: false,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="ti-arrow-left"></i></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="ti-arrow-right"></i></button>`,
     });
 });

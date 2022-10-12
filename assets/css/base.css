@@ -15,12 +15,37 @@ html {
     box-sizing: border-box;
 }
 
-.mg-top-20 {
-    margin-top: 20px;
+body {
+    background: url(../imgs/body-background.jpg) no-repeat center top;
+    min-width: 1020px;
+    background-attachment: fixed;
+    background-size: cover;
+    font: 400 13px/22px "Arial", sans-serif;
+    color: #757570;
+    padding: 0px 0px 120px;
+}
+
+.wrapper {
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    background: #e3e0da;
+}
+
+.mg-top-4 {
+    margin-top: 4px;
+}
+
+.mg-top-8 {
+    margin-top: 8px;
 }
 
 .mg-top-18 {
     margin-top: 18px;
+}
+
+.mg-top-20 {
+    margin-top: 20px;
 }
 
 .btn-default {
@@ -56,6 +81,67 @@ html {
     width: 100%;
 }
 
+.thickItalicLink {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #9d9d98;
+}
+
 a:hover {
     color: #d52e01;
+}
+
+.body__content {
+    padding-top: 55px;
+}
+
+.body__content-heading h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #484a49;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+}
+
+.body__content-item {
+    margin-top: 60px;
+}
+
+/* Slick Dots */
+.slick-dots {
+    display: flex;
+    position: relative;
+    float: right;
+}
+
+/* Slick Arrows */
+.slick-arrow {
+    position: absolute;
+    top: -36px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index: 2;
+    color: #000;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.slick-arrow:hover {
+    color: #fff;
+}
+
+.slick-prev {
+    right: 28px;
+}
+
+.slick-next {
+    right: 0;
 }
