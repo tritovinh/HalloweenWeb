@@ -8,26 +8,32 @@
     <title>Login</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/login.css">
+
+    <!-- Slick Slider -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <p>Please login</p>
         <div class="title">
-            <button class="tablinks" onclick="openTab(event, 'login')">Login</button>
-            <button class="tablinks" onclick="openTab(event, 'signUp')">Sign up</button>
+            <button class="tablinks" id="changeTabLogin">Login</button>
+            <button class="tablinks" id="changeTabSignUp">Sign Up</button>
         </div>
         <form id="login" class="tabcontent">
             <div class="form-input">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter email here" />
+                <input type="text" id="emailLogin" name="emailLogin" placeholder="Enter email here" />
             </div>
             <div class="form-input">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password here" />
+                <input type="password" id="password-login" name="password-login" placeholder="Enter password here" />
             </div>
             <button>Login</button>
         </form>
+
         <form id="signUp" class="tabcontent">
             <div class="form-input">
                 <label for="email">Email</label>
@@ -39,13 +45,13 @@
             </div>
             <div class="form-input">
                 <label for="password">Confirm Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password here" />
+                <input type="password" id="comfirmPassword" name="confirmPassword" placeholder="Enter password here" />
             </div>
-            <button>Sign up</button>
+            <button id="submitRegister">Sign up</button>
         </form>
     </div>
 
-    <script src="../../assets/js/main.js"></script>
+    <script type="module" src="../../assets/js/main.js"></script>
 </body>
 
 </html>
