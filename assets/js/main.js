@@ -86,7 +86,7 @@ document.querySelector("form#signUp").onsubmit = function (event) {
 document.querySelector("form#login").onsubmit = (event) => {
   event.preventDefault();
   let email = this.emailLogin.value.trim();
-  let password = this.password.value.trim();
+  let password = this.passwordLogin.value.trim();
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
